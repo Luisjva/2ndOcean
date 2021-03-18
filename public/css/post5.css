@@ -1,0 +1,29 @@
+h1,
+p {
+  text-align: center;
+}
+
+p {
+  margin-block-start: .4em;
+  margin-block-end: .4em;
+}
+
+.franja {
+  grid-area: franja;
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/post5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.center {
+  text-align: center;
+  font-style: italic;
+}
+
+
+.contenido {
+  width: 90%;
+  margin: auto;
+}

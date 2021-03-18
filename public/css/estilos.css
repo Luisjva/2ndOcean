@@ -1,0 +1,29 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2.6em auto 256px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Dancing Script", sans-serif;
+}
+
+main {
+  grid-area: main;
+}

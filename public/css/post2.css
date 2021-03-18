@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+}
+
+.franja {
+  grid-area: franja;
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/post2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.center {
+  text-align: center;
+  font-style: italic;
+}
+
+.contenido {
+  width: 90%;
+  margin: auto;
+}

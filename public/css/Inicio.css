@@ -1,0 +1,170 @@
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "franja"
+    "post"
+    "rs"
+    "publica"
+    "otros";
+}
+
+/* Franja */
+.franja {
+  grid-area: franja;
+  background-image: url(../../public/img/ciudad-noche.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.franja__titulo {
+  color: #fff;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  display: block;
+  text-align: center;
+}
+
+/* Ultimos post*/
+.ultimos-posts {
+  grid-area: post;
+  width: 95%;
+  margin: auto;
+}
+
+.ultimos-posts__titulo {
+  text-align: center;
+}
+
+.ultimos-posts__posts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Redes Sociales*/
+.rs {
+  grid-area: rs;
+}
+
+.rs__titulo {
+  text-align: center;
+}
+
+.rs__fotos {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.rs__img {
+  width: 100px;
+}
+
+/* Publica con nosotros */
+.publica-con-nosotros {
+  grid-area: publica;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "img titulo"
+    "img texto"
+    "img form";
+
+  background: linear-gradient(#555, #222);
+  margin-top: 1rem;
+}
+
+.publica-con-nosotros__foto {
+  grid-area: img;
+  background-image: url(../../public/img/contactanos.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.publica-con-nosotros__titulo {
+  grid-area: titulo;
+  text-align: center;
+  color: #fff;
+  margin-block-end: 0.4em;
+}
+
+.publica-con-nosotros__texto {
+  grid-area: texto;
+  text-align: center;
+  color: #fff;
+  margin-block-start: 0.2em;
+  width: 97%;
+  margin: auto;
+}
+
+.publica-con-nosotros__formulario {
+  width: 80%;
+  margin: auto;
+}
+
+.publica-con-nosotros__input,
+.publica-con-nosotros__textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #7517c2;
+  width: 100%;
+  margin-top: 0.5rem;
+  outline: none;
+  padding: 0.2rem;
+  color: #fff;
+}
+
+.publica-con-nosotros__textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.publica-con-nosotros__boton {
+  background: none;
+  border: none;
+  border: 2px solid #7517c2;
+  display: block;
+  margin: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem;
+  color: #fff;
+}
+
+/* Otros post */
+.otros-post {
+  grid-area: otros;
+}
+
+.otros-post__titulo {
+  text-align: center;
+}
+
+.otros-post__post {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 725px) {
+  .publica-con-nosotros__formulario {
+    width: 75%;
+  }
+}
