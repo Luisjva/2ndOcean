@@ -1,0 +1,38 @@
+include ../includes/head.pug
+include ../includes/header.pug
+main 
+  .franja 
+    h1.franja__titulo 2nd Ocean
+    a(name="ultimos-post")
+  .ultimos-posts
+    h2.ultimos-posts__titulo Ultimos post
+    .ultimos-posts__posts
+      #primero
+        a(name="rs")
+  .rs   
+    h2.rs__titulo Siguenos tambien en redes sociales 
+    a(name="publica-con-nosotros")
+    .rs__fotos  
+      a(href="https://www.instagram.com/2ndocean20/") 
+        img(src="../../public/img/logo-ig.png", alt="Logo de instagram" class="rs__img")
+      a(href="https://www.facebook.com/2ndocean20") 
+        img(src="../../public/img/logo-face.png", alt="Logo de Facebook" class="rs__img")
+  .publica-con-nosotros 
+    .publica-con-nosotros__foto
+    h2.publica-con-nosotros__titulo Publica con nosotros 
+    p.publica-con-nosotros__texto Si quieres subir tus escritos con nosotros, esta es tu oportunidad
+    form.publica-con-nosotros__formulario
+      input.publica-con-nosotros__input(type="text", placeholder="Nombre", required) 
+      input.publica-con-nosotros__input(type="email", placeholder="Correo", required) 
+      input.publica-con-nosotros__input(type="text", placeholder="Titulo del escrito", required)
+      textarea.publica-con-nosotros__textarea(placeholder="Redacte el escrito completa", required)
+      a(name="otras-publicaciones") 
+      input.publica-con-nosotros__boton(type="button", value="Enviar")
+  .otros-post 
+    h2.otros-post__titulo Otras publicaciones 
+    .otros-post__post 
+      #ultimo
+
+include ../includes/footer.pug
+script(src="../../public/js/ultimos-post.js") 
+script(src="../../public/js/post-fin.js") 
